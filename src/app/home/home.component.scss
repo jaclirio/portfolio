@@ -1,0 +1,34 @@
+section{
+  color: white;
+  font-size: 20px;
+  margin: 0 10%;
+}
+
+#home{
+  margin-top: 50px;
+}
+
+.myPic{
+  float: right;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+#exp{
+
+  >.rowExp{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    >.left{
+      flex: 25%;
+    }
+    >.right{
+      flex: 75%;
+    }
+  }
+}
