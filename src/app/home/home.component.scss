@@ -43,6 +43,9 @@ section{
     >.right{
       flex: 70%;
       margin-left: 5%;
+      display: flex;
+      height: 200px;
+      align-items: center;
     }
   }
 }

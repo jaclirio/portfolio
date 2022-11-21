@@ -11,11 +11,12 @@
   <h2>Experience</h2>
   <div class="rowExp">
     <div class="column left">
-      <button>Company1</button>
-      <button>Company2</button>
+      <button (click)="comp1($event)">IRIS Inc.</button>
+      <button (click)="comp2($event)">Accenture Inc.</button>
     </div>
-    <div class="column right">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante sagittis, tempor mauris suscipit, venenatis urna. Pellentesque ullamcorper turpis non mattis sollicitudin. Integer metus turpis, laoreet eu leo a, luctus molestie nulla. Donec enim tortor, feugiat ac vestibulum non, fringilla sed metus. Nunc pellentesque sit amet ligula sit amet mollis. Sed magna libero, auctor non pretium ullamcorper, facilisis id dui. Aliquam nec commodo elit, sed viverra turpis. Phasellus vel pharetra ligula. Curabitur tincidunt maximus viverr.
+    <div class="column right" [ngSwitch]="company">
+      <span *ngSwitchCase="'company1'">Analyzes client data and extracts what is needed by them per request on a daily basis.</span>
+      <span *ngSwitchCase="'company2'">Monitored and configured firewalls, switches, servers and other network devices for different ASEAN offices remotely. Allocated IPs to various projects and VM allocations. Troubleshooted downed devices or interfaces. Configured packet shaper bandwidth. Checked the health of the devices remotely.</span>
     </div>
   </div>
 
