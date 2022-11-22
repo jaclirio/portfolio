@@ -1,9 +1,9 @@
 <section id="home">
   <div>
-    <span>Hi I'm</span><br>
+    <br><br><span style="font-size: 25px;">Hi I'm</span><br>
     <span style="font-size: 75px;">John Alfred Lirio</span><br>
     <span style="font-size: 45px;">Aspiring Web Developer</span><br>
-    <span style="font-size: 30px;">Want to know more about me?<br>Continue below..</span>
+    <span style="font-size: 30px;">Want to know more about me?<br>Continue below...</span>
 
   </div>
 </section>
@@ -30,10 +30,14 @@
     <div class="column left">
       <button (click)="comp1($event)">IRIS Inc.</button>
       <button (click)="comp2($event)">Accenture Inc.</button>
+      <button (click)="comp3($event)">Shore Solutions Inc.</button>
+      <button (click)="comp4($event)">ArchEn Technologies Inc.</button>
     </div>
     <div class="column right" [ngSwitch]="company">
       <span *ngSwitchCase="'company1'"><b>Data Technician, IRIS Inc.</b><br>December 1, 2021 - Present<br><br>Analyzes client data and extracts what is needed by them per request on a daily basis.</span>
       <span *ngSwitchCase="'company2'"><b>App/Cloud Support Associate, Accenture Inc.</b><br>December 9, 2020 - November 30, 2021<br><br>Monitored and configured firewalls, switches, servers and other network devices for different ASEAN offices remotely. <br><br>Allocated IPs to various projects and VM allocations. Troubleshooted downed devices or interfaces. Configured packet shaper bandwidth. <br><br>Checked the health of the devices remotely.</span>
+      <span *ngSwitchCase="'company3'"><b>ICT On-the-Job Trainee, Shore Solutions Inc.</b><br>January 16,2017 - March 6, 2017<br><br>Trained on how to troubleshoot and format PCs, rejoined computers to a network.<br><br>Installed apps from the file server to the PC, installed Windows 10 and Linux OS to a PC, and connected PCs to a printer.</span>
+      <span *ngSwitchCase="'company4'"><b>IT On-the-Job Trainee, ArchEn Technologies Inc.</b><br>June 9, 2016 - September 3, 2016<br><br>Trained on how to connect networks from computer to printers or to other computers.<br><br>Installed softwares and troubleshooted computers.</span>
     </div>
   </div>
 

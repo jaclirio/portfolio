@@ -17,4 +17,10 @@ export class HomeComponent {
     //const span = document.getElementById('detail2')
     //span!.textContent = 'Qwer 1234';
   }
+  comp3(event: Event) {
+    this.company = 'company3'
+  }
+  comp4(event: Event) {
+    this.company = 'company4'
+  }
 }
