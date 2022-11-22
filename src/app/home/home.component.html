@@ -1,10 +1,27 @@
-<section id="home">Lorem ipsum</section>
+<section id="home">
+  <div>
+    <span>Hi I'm</span><br>
+    <span style="font-size: 75px;">John Alfred Lirio</span><br>
+    <span style="font-size: 45px;">Aspiring Web Developer</span><br>
+    <span style="font-size: 30px;">Want to know more about me?<br>Continue below..</span>
+
+  </div>
+</section>
 
 <section id="about">
   <h2>About</h2>
   <img src="./assets/1x1.jpg" class="myPic" alt="John 1x1 picture">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante sagittis, tempor mauris suscipit, venenatis urna. Pellentesque ullamcorper turpis non mattis sollicitudin. Integer metus turpis, laoreet eu leo a, luctus molestie nulla. Donec enim tortor, feugiat ac vestibulum non, fringilla sed metus. Nunc pellentesque sit amet ligula sit amet mollis. Sed magna libero, auctor non pretium ullamcorper, facilisis id dui. Aliquam nec commodo elit, sed viverra turpis. Phasellus vel pharetra ligula. Curabitur tincidunt maximus viverra. </p>
-  <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce augue nunc, commodo ac dolor et, rutrum mollis est. Nunc aliquam porta leo, ut fermentum odio faucibus non. Cras auctor libero eget ipsum vulputate vestibulum. Vestibulum fringilla ullamcorper fringilla. Donec sodales accumsan auctor. Vestibulum a dapibus magna. Suspendisse est nunc, tempus non egestas at, tincidunt quis metus. Aliquam tincidunt elit at magna pellentesque tincidunt. In quis ultrices nisi, id rhoncus enim. Suspendisse eleifend malesuada mauris non egestas. Sed id mauris egestas mi cursus tempus vel nec nulla. In ac quam in elit facilisis venenatis quis quis enim. Duis ut varius dolor, in laoreet neque.</p>
+  <p>Hi. I'm <b>John Alfred Lirio</b> and I am an aspiring web developer. I'm passionate in creating web applications with the latest technologies available at the current market.</p>
+  <p>Currently learning frontend languages and building this portfolio with the help of <b>Angular/Typescript</b></p>
+  <p>Technologies I'm currently using are:</p>
+  <ul class="list">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>SASS</li>
+    <li>Javascript</li>
+    <li>Angular</li>
+    <li>Typescript</li>
+  </ul>
 </section>
 
 <section id="exp">
@@ -16,18 +33,28 @@
     </div>
     <div class="column right" [ngSwitch]="company">
       <span *ngSwitchCase="'company1'"><b>Data Technician, IRIS Inc.</b><br>December 1, 2021 - Present<br><br>Analyzes client data and extracts what is needed by them per request on a daily basis.</span>
-      <span *ngSwitchCase="'company2'"><b>App/Cloud Support Associate, Accenture Inc.</b><br>December 9, 2020 - November 30, 2021<br><br>Monitored and configured firewalls, switches, servers and other network devices for different ASEAN offices remotely. Allocated IPs to various projects and VM allocations. Troubleshooted downed devices or interfaces. Configured packet shaper bandwidth. Checked the health of the devices remotely.</span>
+      <span *ngSwitchCase="'company2'"><b>App/Cloud Support Associate, Accenture Inc.</b><br>December 9, 2020 - November 30, 2021<br><br>Monitored and configured firewalls, switches, servers and other network devices for different ASEAN offices remotely. <br><br>Allocated IPs to various projects and VM allocations. Troubleshooted downed devices or interfaces. Configured packet shaper bandwidth. <br><br>Checked the health of the devices remotely.</span>
     </div>
   </div>
 
 </section>
 
 <section id="project">
-  <h2>Projects</h2>
+  <h2 class="center">Projects</h2>
+  <div class="projects">
+    <div class="project"><img src="./assets/calc1.jpg" alt="calculator image">
+      <span class="project1"><b>Calculator</b><br><a href="https://github.com/jaclirio/calculator" target="_blank" rel="noopener" class="linkCode">Link to Code</a><br>Javascript
+      </span>
+    </div>
+    <div class="project"><img src="./assets/tic1.jpg" alt="tictactoe image">
+      <span class="project2"><b>Tic-Tac-Toe</b><br><a href="https://github.com/jaclirio/tictactoe" target="_blank" rel="noopener" class="linkCode">Link to Code</a><br>Javascript
+      </span>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
+  <h2 class="center">Contact</h2>
   <div class="reference">
     <a href="mailto:johnalfredlirio@gmail.com" class="email">johnalfredlirio@gmail.com</a>
     <span>
