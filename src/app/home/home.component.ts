@@ -1,10 +1,18 @@
+import { trigger, style , transition, animate } from '@angular/animations';
 import { Component } from '@angular/core';
-import { animate } from 'motion';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('fade', [
+      transition('void => *', [
+        style({ transform: 'translateX(100px)',opacity:0 }, ),
+        animate(2000) //transition
+      ]) //void to default
+    ]) //trigger(name, array)
+  ]
 })
 export class HomeComponent {
   company = 'company1';
@@ -24,4 +32,5 @@ export class HomeComponent {
   comp4(event: Event) {
     this.company = 'company4'
   }
+
 }
